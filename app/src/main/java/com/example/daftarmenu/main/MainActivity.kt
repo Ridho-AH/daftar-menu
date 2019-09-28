@@ -1,10 +1,11 @@
-package com.example.daftarmenu
+package com.example.daftarmenu.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import androidx.fragment.app.Fragment
+import com.example.daftarmenu.R.layout
 import kotlinx.android.synthetic.main.activity_main.tab_main
 import kotlinx.android.synthetic.main.activity_main.vp_main
 
@@ -12,7 +13,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(layout.activity_main)
 
         vp_main.adapter = ViewPageAdapter(supportFragmentManager)
         tab_main.setupWithViewPager(vp_main)
